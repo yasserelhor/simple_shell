@@ -1,11 +1,10 @@
 #include <stdio.h>
 /**
- * The main function of the program
+ * main - Entry point
  *
- * This function is the entry point of the program.
- * it prints a single message to the console.
+ * Description: A C program that print with printf function
  *
- * Return: 0 on successful execution.
+ * Return: Always 0 (Success)
 */
 int main(void)
 {
