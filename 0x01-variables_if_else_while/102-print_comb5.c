@@ -12,7 +12,7 @@
 
 int main(void)
 {
-	int firstDigit = 0, secondDigit;
+	int firstDigit = 0, seconDigit;
 
 	while (firstDigit <= 99)
 	{
