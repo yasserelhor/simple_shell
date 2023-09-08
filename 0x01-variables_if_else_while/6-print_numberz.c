@@ -8,19 +8,18 @@
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int nums = "0123456789";
-
 	int i = 0;
 
-	while (nums[0] != '\0')
+	while (i < 10)
 	{
-
-	putchar(nums[i]);
-	i++
-
+		putchar(i + '0');
+		i++;
 	}
+
+	putchar('\n');
+
 	return (0);
 }
+
