@@ -1,22 +1,27 @@
 #include <stdio.h>
 
 /**
- * input - empty point of the program
+ * main - Entry point of the program
  *
- * Description: this function uses putchar to print lowercase alphabet
+ * Description: This program prints the lowercase alphabet characters from 'a'
+ * to 'z' followed by a newline character.
  *
- * Return: always 0 (Success)
-*/
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
 	char alpha[] = "abcdefghijklmnopqrstuvwxyz\n";
+
 	int i = 0;
-	while (alpha[i] != '\0') 
+
+	while (alpha[i] != '\0')
+
 	{
 		putchar(alpha[i]);
 		i++;
 	}
+
 	return (0);
 
 }
