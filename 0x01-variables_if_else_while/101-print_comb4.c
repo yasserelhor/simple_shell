@@ -42,9 +42,12 @@ int main(void)
 						putchar(' ');
 					}
 				}
-			}	digit3++;
-		}	digit2++;
-	}	digit1++;
+				digit3++;
+			}
+			digit2++;
+		}
+		digit1++;
+	}
 	putchar('\n');
 
 	return (0);
