@@ -3,7 +3,7 @@
 /**
  * main - Entry point of the program
  *
- * Description: This program prints 
+ * Description: This program prints
  *              the lowercase alphabet characters from 'z'
  *              to 'a' in reverse order, followed by a newline character.
  *
@@ -14,7 +14,9 @@ int main(void)
 
 {
 	char alph[] = "zyxwvutsrqponmlkjihgfedcba\n";
+
 	int i = 0;
+
 	while (alph[i] != '\0')
 	{
 		putchar(alph[i]);
