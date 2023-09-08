@@ -17,8 +17,8 @@ int main(void)
 	int i = 0;
 	while (alph[i] != '\0')
 	{
-		putchar(alpha[i]);
+		putchar(alph[i]);
 		i++;
 	}
-	return = (0);
+	return (0);
 }
