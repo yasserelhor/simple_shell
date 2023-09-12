@@ -1,6 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
-
-int _putchar(void);
+#include <stdio.h>
+int _putchar(char c);
 
 #endif
