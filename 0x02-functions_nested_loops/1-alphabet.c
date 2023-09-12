@@ -19,5 +19,4 @@ void print_alphabet(void)
 	for (ch = 0; ch < 26; ch++)
 		_putchar(str[ch]);
 	putchar('\n');
-	return (0);
 }
