@@ -1,17 +1,23 @@
 #include "main.h"
 
+/**
+ * print_alphabet - Prints the lowercase alphabet followed by a newline
+ *
+ * Description:
+ * This function prints the lowercase alphabet from 'a' to 'z' followed by
+ * a newline character '\n' to the standard output.
+ *
+ * Return: void (no return value)
+ */
 
-
-
-
-int main(void)
+void print_alphabet(void)
 {
-        char str[] = "abcdefghijklmnopqrstuvwxyz";
+	char str[] = "abcdefghijklmnopqrstuvwxyz";
 
-        int ch;
+	int ch;
 
-        for (ch = 0; ch < 26; ch++)
-                _putchar(str[ch]);
-        putchar('\n');
-        return (0);
+	for (ch = 0; ch < 26; ch++)
+		_putchar(str[ch]);
+	putchar('\n');
+	return (0);
 }
