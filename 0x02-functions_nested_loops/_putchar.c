@@ -1,20 +1,16 @@
 #include "main.h"
-#include <stdio.h>
+#include <unistd.h>
 
 /**
- * printput - Prints the "_putchar"
- * string followed by the value of 'i'.
+ * _putchar - Writes a character to the standard output.
  *
- * Description: This function
- * prints the string "_putchar" followed by the value
- * of the integer 'i' to the
- * standard output using the printf function.
+ * @c: The character to be written.
  *
- * Return: Always returns 0 to indicate successful execution.
+ * Return: On success, returns 0. On error, returns -1.
  */
 
-int _putchar(void)
+int _putchar(char c)
 {
-	printf("_putchar\n");
+	printf(write(1, &c, 1));
 	return (0);
 }

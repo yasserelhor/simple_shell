@@ -1,18 +1,22 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * main - Entry point of the program
  *
- * Description: This is the main function for the program. It prints
- *              "_putchar" to the standard output and returns 0 to indicate
- *              successful execution.
+ * Description: This function prints the characters of the string "_putchar"
+ *              using the _putchar function and then adds a newline character.
  *
- * Return: 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	_putchar();
+	char str[] = "_putchar";
+
+	int ch;
+
+	for (ch = 0; ch < 8; ch++)
+		_putchar(str[ch]);
+	putchar('\n');
 	return (0);
 }
