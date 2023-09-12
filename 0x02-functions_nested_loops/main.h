@@ -1,4 +1,4 @@
-#ifndef "main.h"
-#define "main.h"
+#ifndef MAIN_H
+#define MAIN_H
 
 int printput(void);
