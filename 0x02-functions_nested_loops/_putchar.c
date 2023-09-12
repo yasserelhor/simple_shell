@@ -13,7 +13,7 @@
  * Return: Always returns 0 to indicate successful execution.
  */
 
-int printput(void)
+int _putchar(void)
 {
 	printf("_putchar\n");
 	return (0);
