@@ -3,9 +3,9 @@
 /**
  * _isalpha - checks if the character c is an alphabetic character.
  *
- * @param c: The character to check.
+ * @c: The character to check.
  *
- * @return 1 if the character is alphabetic, 0 otherwise.
+ * Return: 1 if the character is alphabetic, 0 otherwise.
  */
 
 int _isalpha(int c)
