@@ -15,6 +15,6 @@
 
 int printput(void)
 {
-	printf("_putchar"i);
+	printf("_putchar\n");
 	return (0);
 }
