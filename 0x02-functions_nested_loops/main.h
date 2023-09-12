@@ -2,3 +2,5 @@
 #define MAIN_H
 
 int printput(void);
+
+#endif
