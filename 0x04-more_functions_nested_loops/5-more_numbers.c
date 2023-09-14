@@ -19,6 +19,7 @@ void more_numbers(void)
 	while (t <= 9)
 	{
 		int t1 = 0;
+
 		while (t1 < 20)
 		{
 			_putchar(num[t1]);
