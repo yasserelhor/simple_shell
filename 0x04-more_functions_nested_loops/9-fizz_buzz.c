@@ -5,13 +5,13 @@
  *
  * Description: Prints numbers from 1
  * to 100, replacing multiples of 3 with "Fizz,"
- * multiples of 5 with "Buzz," 
+ * multiples of 5 with "Buzz,"
  * and multiples of both 3 and 5 with "FizzBuzz."
  *
  * Return: Always 0 (Success)
  */
 
-int main (void)
+int main(void)
 {
 	int num;
 
