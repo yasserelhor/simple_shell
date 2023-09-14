@@ -14,7 +14,7 @@ void print_numbers(void)
 
 	while (n <= 9)
 	{
-		putchar('0' + n);
+		putchar(n);
 		n++;
 	}
 	_putchar('\n');
