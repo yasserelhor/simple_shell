@@ -30,7 +30,7 @@ void print_triangle(int size)
 				_putchar(' ');
 			}
 
-			for (hight = 1; base <= hight; base++)
+			for (base = 1; base <= hight; base++)
 			{
 				_putchar('#');
 			}
