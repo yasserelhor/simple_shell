@@ -11,17 +11,22 @@
 
 void print_diagonal(int n)
 {
-	int postn, space;
-
 	if (n <= 0)
-		_putchar('\n');
-	else
 	{
-		for (postn = 1; postn <= n; postn++)
+		_putchar('\n');
+	} else
+	{
+		int b, f;
+
+		for (b = 0; b < n; b++)
 		{
-			for (space = 1; space <= postn; space++)
-				_putchar(' ');
-				_putchar(92);
+			for (f = 0; f < n; f++)
+			{
+				if (f == b)
+					_putchar('\\');
+				else if (f < b)
+					_putchar(' ');
+			}
 			_putchar('\n');
 		}
 	}
