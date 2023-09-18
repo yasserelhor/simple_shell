@@ -16,7 +16,9 @@ void puts_half(char *str)
 	int i = 0;
 
 	while (i != div)
-		printf(str[i]);
+	{
+		printf("%c", str[i]);
 		i++;
-	printf('\n');
+	}
+	printf("\n");
 }
