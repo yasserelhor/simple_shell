@@ -43,7 +43,7 @@ int _atoi(char *s)
 			return (sign == 1 ? INT_MAX : INT_MIN);
 
 		}
-		resutl = result * 10 + digit;
+		result = result * 10 + digit;
 		s++;
 	}
 	return (sign * result);
