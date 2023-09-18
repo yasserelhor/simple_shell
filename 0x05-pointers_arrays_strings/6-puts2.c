@@ -19,8 +19,10 @@ void puts2(char *str)
 
 	while (str[nim] != '\0')
 	{
-		printf("%c", str[nim]);
-		nim += 2;
+		if (str[nim] != '\n')
+
+			printf("%c", str[nim]);
+			nim += 2;
 	}
 	printf("\n");
 }
