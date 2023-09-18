@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <math.h>
 
 /**
  * main - generates random valid passwords for the program 101-crackme.
@@ -15,8 +14,9 @@ int main(void)
 	time_t currentTime;
 
 	srand((unsigned) time(&currentTime));
+
+
 	while (remainingSum > 0)
-	
 	{
 		randomValue = rand() % 94 + 33; 
 		if (randomValue <= remainingSum)
@@ -27,7 +27,7 @@ int main(void)
 		}
 	}	
 
-	for (j = 0; j <= index; j++)
+	for (j = 0; j < index; j++)
 	{
 		printf("%c", password[j]);
 	}
