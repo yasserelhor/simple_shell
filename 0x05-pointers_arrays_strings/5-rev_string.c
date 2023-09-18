@@ -14,10 +14,17 @@ void rev_string(char *s)
 {
 	size_t length = strlen(s);
 
-        int i;
+        int start = 0;
 
-        for (i = length - 1; i >= 0; i--)
-                printf("%c", s[i]);
+	int end = length - 1;
 
-        printf("\n");
+	while (start < end)
+	{
+		char temp = s[start];
+		s[start] = s[end];
+		str[end] = temp;
+		start++;
+		end--;
+	}
+
 }
