@@ -13,7 +13,7 @@ void puts_half(char *str)
 
 	size_t div = length / 2;
 
-	int i = 0;
+	size_t i = 0;
 
 	while (i != div)
 	{
