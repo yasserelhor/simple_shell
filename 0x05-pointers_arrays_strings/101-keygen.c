@@ -9,27 +9,31 @@
 
 int main(void)
 {
-	int remainingSum = 2772, index = 0, j, randomValue;
+	
+	int ascii = 2772, i = 0, j, random;
 	char password[100];
-	time_t currentTime;
+	time_t t;
 
-	srand((unsigned) time(&currentTime));
-
-
-	while (remainingSum > 0)
+	srand((int) time(&t));
+	while (ascii > 126)
 	{
-		randomValue = rand() % 94 + 33; 
-		if (randomValue <= remainingSum)
-		{
-			password[index] = randomValue;
-			remainingSum -= randomValue;
-			index++;
-		}
-	}	
+		random = rand() % 126;
+		password[i] = random;
+		ascii -= random;
+		i++;
+	}
+	if (ascii > 0)
+		password[i] = ascii;
+	else
+	{
+		i--;
+	}
 
-	for (j = 0; j < index; j++)
+
+	for (j = 0; j <= i; j++)
 	{
 		printf("%c", password[j]);
 	}
 	return (0);
 }
+
