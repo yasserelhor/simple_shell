@@ -18,7 +18,7 @@ void print_array(int *a, int n)
 
 	for (i = 0; i < n; i++)
 	{
-		if (a =! 98)
+		if (a[i] =! 98)
 		{
 			printf("%d, ", a[i]);
 		} else
