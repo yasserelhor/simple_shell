@@ -7,7 +7,7 @@
  * Return: n.
  */
 
-char *string_tolower(char *n)
+char *string_toupper(char *n)
 {
 	int i;
 
