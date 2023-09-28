@@ -39,9 +39,8 @@ int pal(char *s, int l)
 }
 
 /**
- * pal - Recursively checks if a string is a palindrome.
+ * is_palindrome - Recursively checks if a string is a palindrome.
  * @s: The input string.
- * @l: The length of the string.
  *
  * Return: 1 if the string is a palindrome, 0 otherwise.
  */
