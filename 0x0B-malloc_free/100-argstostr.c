@@ -1,11 +1,13 @@
 #include "main.h"
 
 /**
- * argstostr - Concatenates an array of strings into a single string with newlines.
+ * argstostr - Concatenates
+ * an array of strings into a single string with newlines.
  * @ac: The number of arguments.
  * @av: An array of strings.
  *
- * Return: A pointer to the concatenated string, or NULL on failure.
+ * Return: A pointer to the
+ * concatenated string, or NULL on failure.
  */
 
 char *argstostr(int ac, char **av)
