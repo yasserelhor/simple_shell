@@ -1,11 +1,19 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * main - Multiplies two numbers provided as command-line arguments.
+ * @argc: The number of command-line arguments.
+ * @argv: An array of strings containing the command-line arguments.
+ *
+ * Return: 0 on successful execution, 98 for errors.
+ */
 
 int main(int argc, char *argv[])
 {
 	unsigned long mult;
 	int i, f;
+
 	if (argc != 3)
 	{ printf("Error\n");
 	exit(98); }
