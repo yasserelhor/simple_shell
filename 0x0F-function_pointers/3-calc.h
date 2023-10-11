@@ -2,6 +2,11 @@
 
 #define _HEADER_
 
+/**
+ * struct op - A structure to define arithmetic operations.
+ * @op: The operator character.
+ * @f: A pointer to the corresponding function for the operation.
+ */
 
 typedef struct op
 {
