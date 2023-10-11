@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
-for (ind = 0; ind <  byt; ind++)
+	for (ind = 0; ind <  byt; ind++)
 	{
 		op = *(unsigned char *)add;
 		printf("%.2x", op);
