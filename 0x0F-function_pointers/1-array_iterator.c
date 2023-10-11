@@ -3,7 +3,8 @@
 
 
 /**
- * array_iterator - Iterates through an array and applies a function to each element.
+ * array_iterator - Iterates through
+ * an array and applies a function to each element.
  * @array: The array to iterate through.
  * @size: The size of the array.
  * @action: A pointer to a function that takes an integer as a parameter.
