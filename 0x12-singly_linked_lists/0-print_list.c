@@ -4,10 +4,11 @@
  * print_list - Prints the contents of a linked list
  * @h: A pointer to the head of the list
  *
- * This function traverses the linked list starting from the head node and prints
- * each node's string value and its length. If the string is NULL, it prints "(nil)".
+ * This function iterates through
+ * the linked list, printing each node's string
+ * and its length, or "(nil)" if the string is NULL.
  *
- * @return: The number of nodes in the list
+ * Return: The number of nodes in the list.
  */
 
 size_t print_list(const list_t *h)
