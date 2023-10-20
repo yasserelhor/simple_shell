@@ -6,19 +6,15 @@ section .text
 global main
 
 extern printf
-global _start
-
-_start:
-    mov esi, prt
-    mov edi, opr
-    mov eax, 0
-    call printf
-
-    mov rax, 60 
-    xor rdi, rdi       
-    syscall
 
 main:
+    ; Your code to set up registers and call printf
+    mov rdi, opr
+    mov rsi, prt
+    call printf
 
-    jmp _start
+    ; Exit the program
+    mov rax, 60        ; Syscall number for sys_exit (60)
+    xor rdi, rdi       ; Status code (0)
+    syscall
 
