@@ -1,28 +1,24 @@
 section .data
-    hello db 'Hello, Holberton',10
-    hello_len equ $ - hello
+    prt db "Hello, Holberton", 0
+    opr db "%s", 10, 0
 
 section .text
+global main
+
+extern printf
 global _start
 
 _start:
-    
-    mov rax, 1
+    mov esi, prt
+    mov edi, opr
+    mov eax, 0
+    call printf
 
-    
-    mov rdi, 1
-
-    
-    lea rsi, [hello]
-
-    
-    mov rdx, hello_len
-
-   
+    mov rax, 60 
+    xor rdi, rdi       
     syscall
 
-    
-    mov rax, 60
-    xor rdi, rdi
-    syscall
+main:
+
+    jmp _start
 
