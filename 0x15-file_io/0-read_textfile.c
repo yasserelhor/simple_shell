@@ -30,7 +30,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	while (i < letters && (c = fgetc(fn)) != EOF)
 	{
-		if (write(1, &c, 1) == -1)
+		if (write(1, &c, 1) == 0)
 		{
 			fclose(fn);
 			return (0);
