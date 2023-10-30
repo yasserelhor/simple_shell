@@ -13,32 +13,30 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *fn;
-	int c;
-	size_t i = 0;
+	ssize_t r, w, o;
+	char *b;
 
 	if (filename == NULL)
+		return (0);
+
+	b = malloc(sizeof(char) * letters);
+	if (b == NULL)
+		return (0);
+
+	o = open(filename, O_RDONLY);
+	r = read(o, b, letters);
+	w = write(STDOUT_FILENO, b, r);
+
+
+	if (o == -1 || r == -1 || w == -1 || w != r)
 	{
+		free(b);
 		return (0);
 	}
 
-	fn = fopen(filename, "r");
-	if (fn == NULL)
-	{
-		return (0);
-	}
+	free(b);
+	
+	close(o);
 
-	while (i < letters && (c = fgetc(fn)) != EOF)
-	{
-		if (write(1, &c, 1) == -1)
-		{
-			fclose(fn);
-			return (0);
-		}
-		i++;
-	}
-
-	fclose(fn);
-	return (i);
+	return (w);
 }
-
