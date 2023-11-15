@@ -31,6 +31,8 @@ int main(int argc, char *argv[])
 	int i;
 	int n_cmds;
 	char *input = NULL;
+	int exit_status = 0;
+
 	(void)argc;
 
 	while (1 && !f_pipe)
@@ -45,8 +47,12 @@ int main(int argc, char *argv[])
 	{
 	if (strcmp(cmds[0], "exit") == 0)
 	{
+		if (n_cmds > 1)
+		{
+			exit_status = atoi(cmds[1]);
+		}
 		free(input);
-		exit(EXIT_SUCCESS);
+		exit(exit_status);
 	}
 
 	exec_c(cmds[0], cmds, argv[0]);
