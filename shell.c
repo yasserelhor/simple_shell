@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 	{
 		if (n_cmds > 1)
 		{
-			exit_status = atoi(cmds[1]);
+			exit_status = _atoi(cmds[1]);
 		}
 		free(input);
 		exit(exit_status);
